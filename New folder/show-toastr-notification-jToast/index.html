@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="dcterms.created" content="Sat, 20 Apr 2019 03:49:35 GMT">
+    <title>jQuery jToast Example</title>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<!-- jtoast Js -->
+	 <script src="js/jToast.js"></script>
+	 
+	 <style>
+	 h1, p{
+	   text-align:center;
+	   margin-top: 20px;
+	  }
+	  .box{
+	   text-align:center;
+	   margin: 20px;
+	  
+	   }
+	 
+	 </style>
+	 
+  </head>
+  <body>
+  
+  		<h1>jQuery jToast Example </h1>
+		<p>A modern & easy-going jQuery Plugin to create Toasts.</p>
+		<div class="box">
+        <button id="btn1">Click me</button>
+        <button id="btn2">No me!</button>
+	    </div>
+		
+		<script>
+		$(document).ready(function(){
+		   $("#btn1").click(function(){
+		   
+		    showToast('This a very example toast. Cool, right?');
+		   
+		   });
+		
+		$("#btn2").click(function(){
+		   
+		   showToast('There we go: Another cool example.', { background: '#f00000'});
+		   
+		   });
+		
+		});
+		
+		</script>
+		
+  </body>
+</html>
+
+ 
